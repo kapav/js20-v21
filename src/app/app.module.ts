@@ -3,6 +3,7 @@ import { NgModule } from '@angular/core';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms'
 
 import { AppRoutingModule } from './app-routing.module';
+import { EvidenceService } from './shared/services/evidence.service'
 import { BracketPipe } from './shared/pipes/bracket.pipe';
 import { HighlightDirective } from './shared/directives/chamfer.directive'
 import { UnlessDirective } from './shared/directives/bevel.directive';
@@ -17,6 +18,9 @@ import { WallComponent } from './shared/components/wall/wall.component';
 import { BiasComponent } from './shared/components/bias/bias.component';
 import { CliffComponent } from './shared/components/cliff/cliff.component';
 import { DeclivityComponent } from './shared/components/declivity/declivity.component';
+import { InclineComponent } from './shared/components/incline/incline.component';
+import { PitchComponent } from './shared/components/pitch/pitch.component';
+import { SlantComponent } from './shared/components/slant/slant.component';
 
 @NgModule({
   declarations: [
@@ -33,7 +37,10 @@ import { DeclivityComponent } from './shared/components/declivity/declivity.comp
     WallComponent,
     BiasComponent,
     CliffComponent,
-    DeclivityComponent
+    DeclivityComponent,
+    InclineComponent,
+    PitchComponent,
+    SlantComponent
   ],
   imports: [
     BrowserModule,
@@ -41,7 +48,7 @@ import { DeclivityComponent } from './shared/components/declivity/declivity.comp
     ReactiveFormsModule,
     AppRoutingModule
   ],
-  providers: [],
+  providers: [EvidenceService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
