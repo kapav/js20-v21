@@ -1,0 +1,11 @@
+<p>staircase works!</p>
+
+<div class="container">
+  <h3>Реактивная форма. Сообщения об ошибках в шаблоне. Свои конструкторы для контролов</h3>
+  <!--TO - error messages in Template, Own constructors-->
+  <form (ngSubmit)="onSubmit()"
+    novalidate
+    [formGroup]="loginForm">
+    <button type="submit" class="btn btn-danger" [disabled]="!loginForm.valid">Отправить</button>
+  </form>
+</div>

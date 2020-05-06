@@ -22,6 +22,7 @@ import { InclineComponent } from './shared/components/incline/incline.component'
 import { PitchComponent } from './shared/components/pitch/pitch.component';
 import { SlantComponent } from './shared/components/slant/slant.component';
 import { TiltComponent } from './shared/components/tilt/tilt.component';
+import { StaircaseComponent } from './shared/components/staircase/staircase.component';
 
 @NgModule({
   declarations: [
@@ -42,7 +43,8 @@ import { TiltComponent } from './shared/components/tilt/tilt.component';
     InclineComponent,
     PitchComponent,
     SlantComponent,
-    TiltComponent
+    TiltComponent,
+    StaircaseComponent
   ],
   imports: [
     BrowserModule,
