@@ -21,6 +21,7 @@ import { DeclivityComponent } from './shared/components/declivity/declivity.comp
 import { InclineComponent } from './shared/components/incline/incline.component';
 import { PitchComponent } from './shared/components/pitch/pitch.component';
 import { SlantComponent } from './shared/components/slant/slant.component';
+import { TiltComponent } from './shared/components/tilt/tilt.component';
 
 @NgModule({
   declarations: [
@@ -40,7 +41,8 @@ import { SlantComponent } from './shared/components/slant/slant.component';
     DeclivityComponent,
     InclineComponent,
     PitchComponent,
-    SlantComponent
+    SlantComponent,
+    TiltComponent
   ],
   imports: [
     BrowserModule,
