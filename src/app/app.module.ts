@@ -23,6 +23,7 @@ import { PitchComponent } from './shared/components/pitch/pitch.component';
 import { SlantComponent } from './shared/components/slant/slant.component';
 import { TiltComponent } from './shared/components/tilt/tilt.component';
 import { StaircaseComponent } from './shared/components/staircase/staircase.component';
+import { StairwayComponent } from './shared/components/stairway/stairway.component';
 
 @NgModule({
   declarations: [
@@ -44,7 +45,8 @@ import { StaircaseComponent } from './shared/components/staircase/staircase.comp
     PitchComponent,
     SlantComponent,
     TiltComponent,
-    StaircaseComponent
+    StaircaseComponent,
+    StairwayComponent
   ],
   imports: [
     BrowserModule,
